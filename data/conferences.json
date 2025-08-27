@@ -1,0 +1,31 @@
+{
+  "conferences": [
+    {
+      "id": "ai-conf-2024",
+      "name": "AI Conference 2024",
+      "slug": "ai-conf-2024",
+      "description": "Leading AI research and applications conference featuring cutting-edge developments in machine learning, deep learning, and artificial intelligence.",
+      "date": "2024-06-15",
+      "location": "San Francisco, CA",
+      "sessionCount": 3
+    },
+    {
+      "id": "devcon-2024",
+      "name": "DevCon 2024",
+      "slug": "devcon-2024", 
+      "description": "Premier developer conference showcasing the latest in software development, cloud computing, and emerging technologies.",
+      "date": "2024-09-20",
+      "location": "Seattle, WA",
+      "sessionCount": 3
+    },
+    {
+      "id": "ml-summit-2024",
+      "name": "ML Summit 2024",
+      "slug": "ml-summit-2024",
+      "description": "Machine Learning Summit focused on practical ML applications, MLOps, and real-world implementation strategies.",
+      "date": "2024-11-10",
+      "location": "Austin, TX", 
+      "sessionCount": 3
+    }
+  ]
+}
