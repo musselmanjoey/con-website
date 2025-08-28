@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { ArrowLeft } from 'lucide-react'
 import Layout from '../../components/Layout'
 import SessionCard from '../../components/SessionCard'
 import conferencesData from '../../data/conferences.json'
@@ -10,7 +11,9 @@ export default function ConferencePage({ conference, sessions }) {
   if (router.isFallback) {
     return (
       <Layout>
-        <div className="text-center">Loading...</div>
+        <div className="text-center py-8">
+          <div className="animate-pulse">Loading...</div>
+        </div>
       </Layout>
     )
   }
@@ -18,10 +21,11 @@ export default function ConferencePage({ conference, sessions }) {
   if (!conference) {
     return (
       <Layout>
-        <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Conference Not Found</h1>
-          <Link href="/" className="text-blue-600 hover:text-blue-800">
-            ← Back to Conferences
+        <div className="text-center py-8">
+          <h1 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Conference Not Found</h1>
+          <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors">
+            <ArrowLeft size={16} />
+            Back to Conferences
           </Link>
         </div>
       </Layout>
@@ -31,31 +35,36 @@ export default function ConferencePage({ conference, sessions }) {
   return (
     <Layout>
       <div className="max-w-6xl mx-auto">
-        <div className="mb-8">
-          <Link href="/" className="text-blue-600 hover:text-blue-800 mb-4 inline-block">
-            ← Back to Conferences
+        {/* Back navigation */}
+        <div className="mb-4 md:mb-6">
+          <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors touch-manipulation min-h-[44px]">
+            <ArrowLeft size={16} />
+            Back to Conferences
           </Link>
-          
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-4">
-              {conference.name}
-            </h1>
-            <p className="text-lg text-gray-600 mb-4">
-              {conference.description}
-            </p>
-            <div className="flex flex-wrap gap-6 text-sm text-gray-500">
-              <span>📅 {new Date(conference.date).toLocaleDateString()}</span>
-              <span>📍 {conference.location}</span>
-              <span>🎯 {conference.sessionCount} sessions</span>
-            </div>
+        </div>
+        
+        {/* Conference header */}
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 md:p-6 mb-6 md:mb-8">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 md:mb-4">
+            {conference.name}
+          </h1>
+          <p className="text-base md:text-lg text-gray-600 mb-4 leading-relaxed">
+            {conference.description}
+          </p>
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-6 text-sm text-gray-500">
+            <span className="flex items-center gap-1">📅 {new Date(conference.date).toLocaleDateString()}</span>
+            <span className="flex items-center gap-1">📍 {conference.location}</span>
+            <span className="flex items-center gap-1">🎯 {conference.sessionCount} sessions</span>
           </div>
         </div>
         
-        <div className="mb-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Sessions</h2>
+        {/* Sessions header */}
+        <div className="mb-4 md:mb-6">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-900">Sessions</h2>
         </div>
         
-        <div className="grid gap-6 lg:grid-cols-2">
+        {/* Sessions grid */}
+        <div className="space-y-6 lg:grid lg:grid-cols-2 lg:gap-6 lg:space-y-0">
           {sessions.map((session) => (
             <SessionCard 
               key={session.id} 
