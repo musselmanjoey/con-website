@@ -2,6 +2,11 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
+  // Only add basePath for GitHub Pages deployment
+  ...(process.env.NODE_ENV === 'production' && {
+    basePath: '/con-website',
+    assetPrefix: '/con-website',
+  }),
   images: {
     unoptimized: true
   }
