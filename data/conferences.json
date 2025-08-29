@@ -12,7 +12,7 @@
     {
       "id": "devcon-2024",
       "name": "DevCon 2024",
-      "slug": "devcon-2024", 
+      "slug": "devcon-2024",
       "description": "Premier developer conference showcasing the latest in software development, cloud computing, and emerging technologies.",
       "date": "2024-09-20",
       "location": "Seattle, WA",
@@ -24,8 +24,25 @@
       "slug": "ml-summit-2024",
       "description": "Machine Learning Summit focused on practical ML applications, MLOps, and real-world implementation strategies.",
       "date": "2024-11-10",
-      "location": "Austin, TX", 
+      "location": "Austin, TX",
       "sessionCount": 3
+    },
+    {
+      "id": "visualStudioLiveRedmond2025",
+      "name": "Visual Studio Live Redmond",
+      "slug": "visual-studio-live-redmond",
+      "description": "",
+      "date": "2025-08-04",
+      "location": "Redmond, WA",
+      "websiteUrl": "https://vslive.com/mshqslides",
+      "tags": [
+        "AI",
+        "github copilot",
+        "MCP",
+        "Low code",
+        "vibe code"
+      ],
+      "sessionCount": 0
     }
   ]
 }

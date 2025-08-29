@@ -1,0 +1,16 @@
+{
+  "conferenceId": "visualStudioLiveRedmond2025",
+  "sessions": [
+    {
+      "id": "fuel-your-fixes-visual-studio-debugging-powered-by-copilot",
+      "title": " Fuel Your Fixes: Visual Studio Debugging, Powered by Copilot",
+      "speaker": "Harashada Hole, Cagri Aslan",
+      "youtubeUrl": "https://www.youtube.com/watch?v=BF4ZPk391xs",
+      "summary": "Love Visual Studio Debugger? Get ready to love it even more. This session dives into how GitHub Copilot and AI are transforming the debugging experience—from setting smarter breakpoints to inspecting variables and stepping through code with intelligent suggestions. You’ll explore how AI enhances traditional workflows, helps you navigate complex issues, and introduces powerful new capabilities like agent mode, where Copilot acts as your debugging partner. Packed with live demos, this session isn’t just about catching bugs it’s about redefining what debugging feels like in an AI-powered IDE.\n\nYou will learn:\n\nUse GitHub Copilot to simplify and accelerate every step of debugging.\nDiscover powerful, underused Visual Studio debugger features.\nExperience Copilot’s new agent mode for interactive, AI-assisted debugging.\n\nVisual Studio: http://visualstudio.com\nVS Live on-demand sessions: https://aka.ms/vslivehq25\nMissed the fun at MS HQ?! Join one of these upcoming events, we’ll see you there! VSLive events: https://aka.ms/VSS/VSLive\nSubscriptions portal: https://my.visualstudio.com",
+      "duration": "45 minutes",
+      "tags": [],
+      "transcript": "",
+      "extractedAt": "2025-08-29T00:37:45.096Z"
+    }
+  ]
+}
