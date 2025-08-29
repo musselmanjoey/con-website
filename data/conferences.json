@@ -54,6 +54,17 @@
       "websiteUrl": "",
       "tags": [],
       "sessionCount": 0
+    },
+    {
+      "id": "testtest",
+      "name": "testtest",
+      "slug": "testtest",
+      "description": "",
+      "date": "2025-07-28",
+      "location": "testtesttest",
+      "websiteUrl": "",
+      "tags": [],
+      "sessionCount": 0
     }
   ]
 }
