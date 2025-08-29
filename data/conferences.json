@@ -43,6 +43,17 @@
         "vibe code"
       ],
       "sessionCount": 0
+    },
+    {
+      "id": "123",
+      "name": "Hey Shae Look at this",
+      "slug": "hey-shae-look-at-this",
+      "description": "",
+      "date": "2025-08-28",
+      "location": "Charlotte, NC",
+      "websiteUrl": "",
+      "tags": [],
+      "sessionCount": 0
     }
   ]
 }
